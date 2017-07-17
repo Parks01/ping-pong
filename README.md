@@ -2,10 +2,15 @@
 
 Andrew Parks
 
-**Program Name**
+**Specs**
 
-ATOM
-
+|Complete?| Spec | Input | Output |
+| -|---|---|---|
+| -|simple input|1|1
+| -|Take an input, return list of number|2| 1,2 |
+| -|replace mults of 3 with ping| 3| 1,2,ping |
+| -|replace 5s with pong|5| 1,2,ping,4,pong|
+| -| replace 15s w/ ping-pong | 15 | 1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong|
 
 **Bugs**
 
