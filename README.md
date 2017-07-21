@@ -14,21 +14,23 @@ Andrew Parks
 
 **Bugs**
 
-The console said "$" could not be identified. The hmtl is can read my jquery file.
-I used javascript prompts and else statements to ask and answer questions.
 
 **Setup Instructions**
 
 * Pull up your terminal
 * cd to your desktop
 * Use copy my repository
-* Use the command *git clone [my repository]*
-* My folder will then be transferred  to your desktop
+*
 
 **Description**
 
-This web page is dedicated to person that is trying to find the proper college for there lifestyle.
-After you click the submit button below, you find your correct college match.
+This is very simple ping pong games.
+
+Numbers divisible by 3 are replaced with "ping"
+
+Numbers divisible by 5 are replaced with "pong"
+
+Numbers divisible by 15 are replaced with "ping-pong"
 
 **Copyright and License Information**
 
