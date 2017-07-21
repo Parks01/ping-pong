@@ -7,9 +7,14 @@ h1 {
 }
 
 body {
-  background-color: #C8C8C8;
+  background-color: #f5f5f5;
 }
 
-h2 {
-  font-color:blue;
+.jumbotron {
+
+  background-color: #f6d5c9;
+}
+
+#about {
+  background-color: #dae3f3;
 }
