@@ -3,5 +3,9 @@ h1 {
 }
 
 .instructions {
-  margin-top: 100px; 
+  margin-top: 100px;
+}
+
+body {
+  background-color: #C8C8C8;
 }
