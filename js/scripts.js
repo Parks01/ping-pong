@@ -1,64 +1,32 @@
-//logic
-//var firstNumbers = [1];
-//var secondNumbers = [1,2];
-//var thirdNumber = [1,2,"ping"];
-var firstNumber = ["1"];
-var secondNumber = ["2"];
-var thirdNumber = ["1", "2", "ping"];
-var fourthNumber = ["4","pong"];
-var fifthNumber = ["ping","7" , "8", "ping" ,"pong" ,"11" ,"ping" , "13" ,"14", "ping-pong"];
-
-
-
-
+//business logic
+function pingPong(input) {
+  var arrayOfNumbers = [];
+  for (var i = 1; i <= input; i++) {
+    if (i % 15 === 0) {
+      arrayOfNumbers.push("pingpong");
+    } else if (i % 5 === 0) {
+      arrayOfNumbers.push("pong");
+    } else if (i % 3 === 0) {
+      arrayOfNumbers.push("ping");
+    } else {
+      arrayOfNumbers.push(i);
+    }
+  }
+  return arrayOfNumbers;
+}
 
 //UI
 $(document).ready(function(){
-$("#form1").submit(function(event){
-event.preventDefault();
+  $("#form1").submit(function(event){
+    event.preventDefault();
+    $("#output ul").empty();
+    var userInput = $("#userInput").val();
+    $("#userInput").val("");
+    var answer = pingPong(userInput);
+    answer.forEach(function(item) {
+      $("#output ul").append("<li>" + item + "</li>");
+    })
 
-var userInput = $("#userInput").val();
-
-
-if(userInput === firstNumber[0]) {
-
- $("#output h2").append(firstNumber[0]);
-
-}
-
-if(userInput === secondNumber[0]) {
-
-  var connect = firstNumber.concat(secondNumber);
-
- $("#output h2").append(connect);
-
-}
-
-var addPing = thirdNumber.join();
-
-if(userInput === "3") {
-
-$("#output h2").append(addPing);
-
-}
-
-var secondPing = thirdNumber.concat(fourthNumber);
-
-if(userInput === "5") {
-
-$("#output h2").append(secondPing);
-
-}
-
-var firstPong = secondPing.concat(fifthNumber);
-
-if(userInput === "15") {
-
-$("#output h2").append(firstPong);
-
-}
-
-
-
+    // $("#output div h2").append(pingPong($("#userInput").val()));
   });
 });
